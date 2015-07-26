@@ -1,42 +1,55 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Wordpress-rechner by microsd</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Wordpress-rechner by microsd</title>
   </head>
+
   <body>
-    <section class="page-header">
-      <h1 class="project-name">Wordpress-rechner</h1>
-      <h2 class="project-tagline">Einfachen Online-Rechner für Wordpress erstellen.</h2>
-      <a href="https://github.com/microsd/wordpress-rechner" class="btn">View on GitHub</a>
-      <a href="https://github.com/microsd/wordpress-rechner/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/microsd/wordpress-rechner/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <div id="container">
+      <div class="inner">
 
-    <section class="main-content">
-      <h1>
-<a id="wordpress-rechner" class="anchor" href="#wordpress-rechner" aria-hidden="true"><span class="octicon octicon-link"></span></a>wordpress-rechner</h1>
+        <header>
+          <h1>Wordpress-rechner</h1>
+          <h2>Einen einfachen Online-Rechner für Wordpress erstellen.</h2>
+        </header>
 
-<p>Einfachen Online-Rechner für Wordpress erstellen.</p>
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/microsd/wordpress-rechner/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/microsd/wordpress-rechner/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/microsd/wordpress-rechner" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
 
-<p>Diese Anleitung erklärt, wie man in Wordpress einen einfachen Online-Rechner erstellen kann. Ein solcher Rechner ist Beispielhaft auf der Seite <a href="http://www.micro-sd.net/kapazitaetsrechner/">http://www.micro-sd.net/kapazitaetsrechner/</a> zu sehen. Es wird eine funktionierende Wordpress-Installation vorausgesetzt.
-Für einfache Online-Rechner eignet sich das kostenlose Plugin "Calculated Fields Form":
-<img src="https://github.com/microsd/wordpress-rechner/blob/master/images/calculated_fields_form.jpg" alt="Plugin installieren"></p>
+        <hr>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/microsd/wordpress-rechner">Wordpress-rechner</a> is maintained by <a href="https://github.com/microsd">microsd</a>.</span>
+        <section id="main_content">
+          <p>Diese Anleitung erklärt, wie man in Wordpress einen einfachen Online-Rechner erstellen kann. Ein solcher Rechner ist Beispielhaft auf der Seite <a href="http://www.micro-sd.net/kapazitaetsrechner/">http://www.micro-sd.net/kapazitaetsrechner/</a> zu sehen. Es gibt dort mehrere Eingabefelder, aus denen der Benutzer die umzurechnenden Größen bestimmt. Das Ausgabefeld wird automatisch aus den Eingaben errechnet. Das Tool führt dabei eine Syntaxprüfung durch und es wird die deutsche Schreibweise mit Komma als Dezimaltrennzeichen sowie Punkt zur 1.000er Gruppierung verwendet. Es wird eine funktionierende Wordpress-Installation vorausgesetzt.
+Für einfache Online-Rechner eignet sich das kostenlose Plugin <a href="https://wordpress.org/plugins/calculated-fields-form/">Calculated Fields Form</a>:
+<img src="https://raw.githubusercontent.com/microsd/wordpress-rechner/master/images/calculated_fields_form.jpg" alt="Plugin installieren">
+Nach dem Installieren und Aktivieren bitte auf Plugins-&gt;Installierte Plugins-&gt;Calculated Fields Form-&gt;Einstellungen Klicken. Dann unter "New Form" einen Namen eintragen und ein neues Formular erstellen:
+<img src="https://raw.githubusercontent.com/microsd/wordpress-rechner/master/images/new_form.jpg" alt="Neues Formular Erstellen">
+Mit "Settings" öffnet sich das Forms Menü. Dort kann man per Drag &amp; Drop eigene Formulare erstellen, verschieben und Logik einprogrammieren. Das Beispielformular gibt schon die wichtigsten Hinweise, wie das Tool funktioniert. Es gibt Einfabefelder, in denen der Nutzer Werte einträgt. Ein Ergebnis wird in dem Feld "Calculated Field" errechnet. Die Logik dazu findet sich unter "Set Equation", nachdem man das Feld markiert hat. Um z.B. das Quadrat des Eingabewertes zu Berechnen, geben wir dort fieldname2*fieldname2 ein.
+<img src="https://raw.githubusercontent.com/microsd/wordpress-rechner/master/images/calculated_field.jpg" alt="Formel eingeben">
+Nun haben wir bereits und funktionierendes Formulat. Mittels "Save&amp;Preview" können wir uns es anschauen. Was jetzt noch fehlt sind die deutschen Einstellungen für das Zahlenformat:
+<img src="https://raw.githubusercontent.com/microsd/wordpress-rechner/master/images/german_settings.jpg" alt="Deutsche Einstellungen Zahlenformat">
+Bei Number-Format bitte "number" auswählen. Bei "Decimals seperator symbol" ein Komme "," eingeben, bei Symbol for grouping thousands einen Punkt "." eingeben. Nun werden die Zahlen im deutschen Format dargestellt. Letztes Finetuning sind nun die Settings unten auf der Seite "Validation Settings". Dort können die englischsprachigen Fehlermeldungen bei falscher Benutzereingabe auf Deutsch manuell übersetzt werden. </p>
+        </section>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+        <footer>
+          Wordpress-rechner is maintained by <a href="https://github.com/microsd">microsd</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
 
-    </section>
-
-  
+        
+      </div>
+    </div>
   </body>
 </html>
-
