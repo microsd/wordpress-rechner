@@ -1,5 +1,5 @@
 # wordpress-rechner
-Einfachen Online-Rechner für Wordpress erstellen.
+Einfachen Online-Rechner für Wordpress erstellen. [Website](http://microsd.github.io/wordpress-rechner/)
 
 Diese Anleitung erklärt, wie man in Wordpress einen einfachen Online-Rechner erstellen kann. Ein solcher Rechner ist Beispielhaft auf der Seite http://www.micro-sd.net/kapazitaetsrechner/ zu sehen. Es gibt dort mehrere Eingabefelder, aus denen der Benutzer die umzurechnenden Größen bestimmt. Das Ausgabefeld wird automatisch aus den Eingaben errechnet. Das Tool führt dabei eine Syntaxprüfung durch und es wird die deutsche Schreibweise mit Komma als Dezimaltrennzeichen sowie Punkt zur 1.000er Gruppierung verwendet. Es wird eine funktionierende Wordpress-Installation vorausgesetzt.
 Für einfache Online-Rechner eignet sich das kostenlose Plugin [Calculated Fields Form](https://wordpress.org/plugins/calculated-fields-form/):
