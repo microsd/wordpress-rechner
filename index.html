@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Wordpress-rechner by microsd</title>
+    <meta name="description" content="Wordpress-rechner : Einen einfachen Online-Rechner für Wordpress erstellen.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Wordpress-rechner</title>
   </head>
 
   <body>
-    <div id="container">
-      <div class="inner">
 
-        <header>
-          <h1>Wordpress-rechner</h1>
-          <h2>Einen einfachen Online-Rechner für Wordpress erstellen.</h2>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/microsd/wordpress-rechner">View on GitHub</a>
+
+          <h1 id="project_title">Wordpress-rechner</h1>
+          <h2 id="project_tagline">Einen einfachen Online-Rechner für Wordpress erstellen.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/microsd/wordpress-rechner/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/microsd/wordpress-rechner/tarball/master">Download this project as a tar.gz file</a>
+            </section>
         </header>
+    </div>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/microsd/wordpress-rechner/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/microsd/wordpress-rechner/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/microsd/wordpress-rechner" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
-
-        <hr>
-
-        <section id="main_content">
-          <p>Diese Anleitung erklärt, wie man in Wordpress einen einfachen Online-Rechner erstellen kann. Ein solcher Rechner ist Beispielhaft auf der Seite <a href="http://www.micro-sd.net/kapazitaetsrechner/">http://www.micro-sd.net/kapazitaetsrechner/</a> zu sehen. Es gibt dort mehrere Eingabefelder, aus denen der Benutzer die umzurechnenden Größen bestimmt. Das Ausgabefeld wird automatisch aus den Eingaben errechnet. Das Tool führt dabei eine Syntaxprüfung durch und es wird die deutsche Schreibweise mit Komma als Dezimaltrennzeichen sowie Punkt zur 1.000er Gruppierung verwendet. Es wird eine funktionierende Wordpress-Installation vorausgesetzt.
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>Diese Anleitung erklärt, wie man in Wordpress einen einfachen Online-Rechner erstellen kann. Ein solcher Rechner ist Beispielhaft auf der Seite <a href="http://www.micro-sd.net/kapazitaetsrechner/">http://www.micro-sd.net/kapazitaetsrechner/</a> zu sehen. Es gibt dort mehrere Eingabefelder, aus denen der Benutzer die umzurechnenden Größen bestimmt. Das Ausgabefeld wird automatisch aus den Eingaben errechnet. Das Tool führt dabei eine Syntaxprüfung durch und es wird die deutsche Schreibweise mit Komma als Dezimaltrennzeichen sowie Punkt zur 1.000er Gruppierung verwendet. Es wird eine funktionierende Wordpress-Installation vorausgesetzt.
 Für einfache Online-Rechner eignet sich das kostenlose Plugin <a href="https://wordpress.org/plugins/calculated-fields-form/">Calculated Fields Form</a>:
 <img src="https://raw.githubusercontent.com/microsd/wordpress-rechner/master/images/calculated_fields_form.jpg" alt="Plugin installieren">
 Nach dem Installieren und Aktivieren bitte auf Plugins-&gt;Installierte Plugins-&gt;Calculated Fields Form-&gt;Einstellungen Klicken. Dann unter "New Form" einen Namen eintragen und ein neues Formular erstellen:
@@ -41,15 +41,18 @@ Mit "Settings" öffnet sich das Forms Menü. Dort kann man per Drag &amp; Drop e
 Nun haben wir bereits und funktionierendes Formulat. Mittels "Save&amp;Preview" können wir uns es anschauen. Was jetzt noch fehlt sind die deutschen Einstellungen für das Zahlenformat:
 <img src="https://raw.githubusercontent.com/microsd/wordpress-rechner/master/images/german_settings.jpg" alt="Deutsche Einstellungen Zahlenformat">
 Bei Number-Format bitte "number" auswählen. Bei "Decimals seperator symbol" ein Komme "," eingeben, bei Symbol for grouping thousands einen Punkt "." eingeben. Nun werden die Zahlen im deutschen Format dargestellt. Letztes Finetuning sind nun die Settings unten auf der Seite "Validation Settings". Dort können die englischsprachigen Fehlermeldungen bei falscher Benutzereingabe auf Deutsch manuell übersetzt werden. </p>
-        </section>
-
-        <footer>
-          Wordpress-rechner is maintained by <a href="https://github.com/microsd">microsd</a><br>
-          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
-        
-      </div>
+      </section>
     </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Wordpress-rechner maintained by <a href="https://github.com/microsd">microsd</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
   </body>
 </html>
