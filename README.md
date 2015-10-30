@@ -11,3 +11,4 @@ Mit "Settings" öffnet sich das Forms Menü. Dort kann man per Drag & Drop eigen
 Nun haben wir bereits und funktionierendes Formulat. Mittels "Save&Preview" können wir uns es anschauen. Was jetzt noch fehlt sind die deutschen Einstellungen für das Zahlenformat:
 ![Deutsche Einstellungen Zahlenformat](https://raw.githubusercontent.com/microsd/wordpress-rechner/master/images/german_settings.jpg)
 Bei Number-Format bitte "number" auswählen. Bei "Decimals seperator symbol" ein Komme "," eingeben, bei Symbol for grouping thousands einen Punkt "." eingeben. Nun werden die Zahlen im deutschen Format dargestellt. Letztes Finetuning sind nun die Settings unten auf der Seite "Validation Settings". Dort können die englischsprachigen Fehlermeldungen bei falscher Benutzereingabe auf Deutsch manuell übersetzt werden. 
+(http://www.oszilloskope.net)
